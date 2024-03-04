@@ -96,18 +96,18 @@ body {
     margin-right: 40px;
 }
 
-#radio1:checked~.naveg-auto .bot-auto1{
+#radio1:checked ~ .naveg-auto .bot-auto1{
     background-color: burlywood;
 }
 
-#radio2:checked~.naveg-auto .bot-auto2{
+#radio2:checked ~ .naveg-auto .bot-auto2{
     background-color: burlywood;
 }
 
-#radio3:checked~.naveg-auto .bot-auto3{
+#radio3:checked ~ .naveg-auto .bot-auto3{
     background-color: burlywood;
 }
 
-#radio4:checked~.naveg-auto .bot-auto4{
+#radio4:checked ~ .naveg-auto .bot-auto4{
     background-color: burlywood;
 }
