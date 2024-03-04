@@ -1,15 +1,17 @@
-let começa=1;
-document.getElementById("radio1").checked=true;
+$(document).ready(function() {
+    let começa = 1;
+    $("#radio1").prop("checked", true);
 
-setInterval(function(){
-    proxImagem();
-}, 2000)
+    setInterval(function() {
+        proxImagem();
+    }, 2000);
 
-function proxImagem(){
-    começa++;
-    if (começa>4){
-        começa=1;
+    function proxImagem() {
+        começa++;
+        if (começa > 4) {
+            começa = 1;
+        }
+
+        $("#radio" + começa).prop("checked", true);
     }
-    
-    document.getElementById("radio"+começa).checked=true;
-}
+});
