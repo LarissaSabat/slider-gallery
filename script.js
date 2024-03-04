@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     setInterval(function() {
         proxImagem();
-    }, 2000);
+    }, 3000);
 
     function proxImagem() {
         começa++;
