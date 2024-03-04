@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria{
+    margin: 0 auto;
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 350px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.item {
+    width: 25%;
+    position: relative;
+}
+
+.item img{
+   width: 600px;
+    height: 350px;
+}
+
+.naveg-manual{
+    position: absolute;
+    width: 600px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.bot-manual{
+    border: 3px solid burlywood;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.bot-manual:not(:last-child){
+    margin-right: 40px;
+}
+
+.bot-manual:hover{
+    background-color: burlywood;
+
+}
+
+#radio1:checked ~ .um{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .um{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .um{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .um{
+    margin-left: -75%;
+}
+
+.naveg-auto div {
+    border: 3px solid blue;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.naveg-auto {
+    position: absolute;
+    width: 600px;
+    margin-top: 310px;
+    justify-content: center;
+    display: flex;
+}
+
+.naveg-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked~.naveg-auto .bot-auto1{
+    background-color: burlywood;
+}
+
+#radio2:checked~.naveg-auto .bot-auto2{
+    background-color: burlywood;
+}
+
+#radio3:checked~.naveg-auto .bot-auto3{
+    background-color: burlywood;
+}
+
+#radio4:checked~.naveg-auto .bot-auto4{
+    background-color: burlywood;
+}
